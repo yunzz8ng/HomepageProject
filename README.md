@@ -1,4 +1,4 @@
 # HomepageProject
-![Main Image].(homepageex_1.png)
-![Main Image].(homepageex_2.png)
-![Main Image].(homepageex_3.png)
+<img src="homepageex_1.png" alt="ex1" width="500" />
+<img src="homepageex_2.png" alt="ex2" width="500" />
+<img src="homepageex_3.png" alt="ex3" width="500" />
