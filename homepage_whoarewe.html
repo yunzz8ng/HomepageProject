@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Market</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    .con {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 112px auto auto auto 242px;
+        grid-template-areas: 
+        "logo menu"
+        "text text"
+        "img img"
+        "main main"
+        "footer footer"
+        ;
+    }
+    .logo {
+        grid-area: logo;
+        font-size: 30px;
+        font-family: "Edu AU VIC WA NT Hand", cursive;
+        padding-left: 200px;
+        padding-top: 30px;
+        color: #426B1F;
+        
+    }
+    .menu {
+        grid-area: menu;
+        padding-right: 200px;
+    }
+    
+    .main{
+        grid-area: main;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        display: inline-block;
+    }
+    table {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+    }
+    th, td {
+        padding: 40px;
+        text-align: left;
+        padding-top: 1px;
+    }
+    #td{
+        float: inline-start;
+        padding-top: 0%;
+       width: 200px;
+       font-weight: bold;
+    }
+    #td2{
+        float: inline-start;
+    }
+    .text {
+    
+        margin-top: 80px;
+        margin-bottom: 80px;
+        grid-area: text;
+        text-align: center;
+        font-family: "Lora", serif;
+
+    }
+    .img {
+        width: 100%;
+        grid-area: img;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .footer{
+        grid-area: footer;
+        width: 100%;
+        height: 300px;
+        background-color: #88B066;
+        margin-top: 100px;
+        color: white;
+    }
+    .footer h1{
+        margin-left: 50px;
+        padding-top: 50px;
+        margin-bottom: 40px;
+        letter-spacing: 1px;
+    }
+    .footer span {
+        letter-spacing: 1px;
+        margin-left: 50px;
+    }
+    ul{
+        list-style: none;
+        display:flex;
+        float: right;
+        padding-right: 10px;
+        padding-top: 30px;
+    }
+    li {
+        padding-right: 50px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    #signup{
+        background-color: #88B066;
+        border: 1px solid #88B066;  
+        border-radius: 35px; 
+    }
+    a {
+        text-decoration: none; 
+        color: black;
+    } 
+    .logo a {
+        text-decoration: none; 
+        color: #88B066;
+    } 
+    #spe {
+        color: #88B066;
+        font-weight: bold;
+    }
+    p {
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="con">
+        <div class="logo">
+            <span><a href="./homepage_main.html">Green Market</a></span>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="./homepage_shop.html">Shop</a></li>
+                <li><a href="./homepage_whoarewe.html">Who We Are</a></li>
+                <li><button id="signup" class="btn btn-primary" type="submit"><a href="./homepage_signup.html">Sign Up</a></button></li>
+
+            </ul>
+        </div>
+
+        <div class="text">
+            <h1>We’re farmers, purveyors,<br>and eaters of 
+                organically grown food.</h1>
+                </div>
+            <div class="img">
+            <img src="./img1.jpeg">
+            </div>
+                <div class="main">
+                <table>
+                <tr>
+                <td id="td">우리의 미션</td>
+                <td>그린 마켓의 미션은 간단합니다.<br>
+                    "신선한 채소를 더 쉽게, 더 건강하게." 바쁜 일상 속에서도 손쉽게 
+                    신선한 채소를 즐길 수 있도록, 저희는 농장에서 직접 수확한 채소를 신속하게 배송해드립니다. 모든 
+                    제품은 엄격한 품질 관리를 통해 선별되며, 고객님의 식탁에 오르기까지 최상의 상태를 유지합니다.</td>
+                </tr>
+                <tr>
+                    <td id="td">우리의 비전</td>
+                    <td>우리는 고객님의 건강과 행복을 최우선으로 생각합니다.<br>그린 마켓은 지속 가능한 농업을 지원하며, 
+                        지역 농가와 협력하여 공정하고 윤리적인 거래를 실천합니다.<br>이를 통해 지역 경제를 활성화하고, 환경을 보호하며, 고객님께는 신뢰할 수 있는 채소를 제공합니다.</td>
+                </tr>
+                <tr>
+                    <td id="td">우리의 가치</td>
+                    <td>신선함 보장 : 농장에서 고객님의 식탁까지, 신선함을 유지하기 위해 최선을 다합니다.<br>
+                        품질 우선: 모든 제품은 엄격한 품질 기준을 통과한 것만을 제공합니다.<br>
+                        고객 중심: 고객님의 편리함과 만족을 최우선으로 생각하며, 맞춤형 서비스와 다양한 선택지를 제공
+                        합니다.<br>
+                        지속 가능성: 환경을 생각하는 지속 가능한 농업과 친환경 포장재를 사용하여 지구를 보호합니다.
+                        <br>지역 사회 기여: 지역 농가와 협력하여 지역 경제를 활성화하고, 공정한 거래를 실천합니다.</td>
+                </tr>
+                <tr>
+                    <td id="td">제공하는 서비스</td>
+                    <td>다양한 채소 : 계절별 신선한 채소를 다양하게 제공합니다.
+                        정기 배송 서비스: 주기적으로 신선한 채소를 집 앞까지 배달해드립니다.
+                        맞춤형 채소 상자: 고객님의 취향에 맞춘 채소 상자를 제공합니다.
+                        레시피 제안: 건강하고 맛있는 채소 요리 레시피를 함께 제공하여 식단을 더욱 풍성하게 만들어드립
+                        니다.</td>
+                </tr>
+            </table>
+            <div style="margin-top: 50px;">
+            <span id="spe">그린 마켓</span><span>과 함께라면, 신선하고 건강한 채소를 더 쉽고 편리하게 즐길 수 있습니다.</span>
+            <p>언제나 신선함과 건강을 당신의 식탁으로 배달해드리겠습니다.</p>
+            <p>감사합니다.</p>
+            <br>
+            <p id="spe">그린 마켓 드림</p>
+        </div>
+    </div>
+        <div class="footer">
+            <h1>Green Market</h1>
+            <span>OWNER: 정윤정<span><span style="margin-left: 50px;">Co Reg.No : 000-00-00000</span>
+            <br>
+            <br>
+            <span>Address: 광주광역시 서구 시청로 00, 123 - 142</span><span style="margin-left: 50px;">TEL: 062) 123 - 1234</span><span style="margin-left: 50px;">Mon-Fri: 9AM ~ 6PM(주말,공휴일 휴무)</span><span style="margin-left: 50px;">Email: 홍길동@naver.com</span>        
+        </div>
+    </div>    
+</body>
+</html>
